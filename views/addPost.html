@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kimeiga/bahunya/dist/bahunya.min.css" />
+    <link rel="stylesheet" href="/css/main.css">
+    <title>About</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <span id="navbar-brand"><b>WEB322 - Harshil Dineshbhai Thakkar</b></span>
+            <a href="/blog">Blog</a>
+            <a href="/about">About</a>
+            <a href="/posts">Posts</a>
+            <a href="/categories">Categories</a>
+            <a href="/posts/add">AddPost</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Add Post</h1>
+        <div id="formDiv">
+            <form action="/posts/add" method="POST" enctype="multipart/form-data">
+
+                <label for="featureImage">
+                    <h3>Feature Image</h3>
+                </label>
+                <input id="featureImage" type="file" name="featureImage" style="background-color: white;color: black;" />
+                <hr>
+
+                <h3>Post Content</h3>
+                <hr>
+
+                <label for="title"><b>Title:</b></label>
+                <input id="title" type="text" name="title" />
+                <br />
+                <label for="body"><b>Body:</b></label>
+                <textarea id="body" type="textarea" name="body"></textarea>
+                <br />
+                <div id="sameLine">
+                    <label for="category"><b>Category:</b></label><br>
+                    <input id="category" list="categories" name="category" /><datalist id="categories">
+                        <option value="Technology">
+                        <option value="Gaming">
+                        <option value="Fashion">
+                        <option value="Education">
+                        <option value="Wellness">
+                    </datalist>
+                </div>
+                <div id="sameLine">
+                    <label for="published"><b>Visiblity:</b></label><br>
+                    <input type="checkbox" name="published" id="published">Published
+                </div>
+                <hr />
+                <input id="submitButton" type="submit" value="Add Post" />
+            </form>
+    </main>
+</body>
+
+</html>

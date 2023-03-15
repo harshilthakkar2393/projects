@@ -1,0 +1,71 @@
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1673427147403-9e87c4fe8a26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3328&q=80");
+    background-repeat: no-repeat;
+    color:rgb(255, 255, 255);
+}
+h1,h3
+{
+    color: white;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: transparent;
+}
+
+input {
+    margin: 4px;
+    width: 47vw;
+    background: white;
+    border: white;
+    color: black;
+}
+
+label {
+    align-self: left;
+    text-decoration: solid
+}
+
+#formDiv {
+    /* background: rgba(187, 211, 236, 0.2); */
+    background: rgba(174, 174, 174, 0.524);
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+    backdrop-filter: saturate(180%) blur(5px);
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 16px;
+    width: 50vw;
+}
+#submitButton
+{
+    background-color: rgba(50, 41, 239, 0.824);
+    color: white;
+    width: auto;
+    margin-right: 0px;
+    margin-left: auto;
+    
+}
+#category
+{
+    width: 25vw;
+}
+#body
+{
+    background-color: white;
+    color: black;
+    height: 40vh;
+}
+#sameLine
+{
+    display: inline-block;
+}
